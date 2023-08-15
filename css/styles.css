@@ -372,6 +372,59 @@ max-width: 264px;
 }
 /* ==============/Footer=============== */
 
+/* ===============Backdrop==================== */
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2E2F4266;
+    z-index: 9999;
+    
+    transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+/* ===============/Backdrop==================== */
+
+/* ===============Modal Window==================== */
+.modal{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 408px;
+   height: 584px;
+    background-color: var(--modal-background-color);
+
+}
+
+.close-btn{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    line-height: 0;
+
+    background: linear-gradient(0deg, #E7E9FC, #E7E9FC),
+linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+
+}
+
+.close-btn-icon{
+
+}
+/* ===============/Modal Window==================== */
+
 /* ===============Portfolio======================= */
 .section.projects{
     padding-top: 96px;
@@ -417,21 +470,34 @@ max-width: 264px;
 
 .portfolio-list-img-wrapper{
 position: relative;
+overflow: hidden;
 }
+
 .overlay{
+font-weight: 400;
+text-align: left;
+color: var(--light-color);
+padding: 40px 32px 164px 32px;
+
 position: absolute;
 top: 0;
 left: 0;
 width: 100%;
 height: 100%;
 background-color: var(--primary-brand-color);
-  color: #31D0AA;  
+
+transform: translateY(100%);
+transition: transform var(--transition-dur-and-fun);
 }
 
 .portfolio-list-item{
     width: calc((100% - 2*24px) / 3);
 }
 
+.portfolio-list-item-link:hover .overlay,
+.portfolio-list-item-link:focus .overlay{
+    transform: translateY(0%);
+}
 .card{
     border: 1px solid #E7E9FC;
     border-top: 0;

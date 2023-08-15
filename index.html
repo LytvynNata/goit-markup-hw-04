@@ -45,7 +45,7 @@
 <section class="hero section">
     <div class="container">
     <h1 class="hero-title">Effective Solutions for Your Business</h1>
-    <button type="button" class="hero-button">Order Service</button>
+    <button type="button" class="hero-button" data-modal-open >Order Service</button>
 </div>
 </section>
 <!------------------------------------------- Our benefits ------------------------------------------------------->
@@ -172,5 +172,16 @@
         </p>
     </div>
     </footer>
+    <!--------------- Backdrop and Modal Window ------------>
+    <div class="backdrop is-hidden" data-modal >
+<div class="modal">
+<button type="button" class="close-btn" data-modal-close >
+    <svg class="close-btn-icon" width="8" height="8" aria-label="modal window close icon">
+        <use href="./images/icons/sprite.svg#icon-close"></use>
+    </svg>
+</button>
+</div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
