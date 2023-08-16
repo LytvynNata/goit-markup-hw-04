@@ -325,14 +325,60 @@ margin-bottom: 72px;
     border-radius: 0px 0px 4px 4px;
 }
 
+.social-icons-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    gap: 24px;
+}
 
+.social-list-link{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-brand-color);
+    fill: var(--light-color);
+    justify-content: center;
+    align-items: center;
 
+    transition: background-color var(--transition-dur-and-fun);
+}
 
+.social-list-link:hover{
+background-color: var(--press-state-color);
+}
 .sub-text{
 font-weight: 400;
 text-align: center;
 }
 /* =============/Our Team========== */
+
+/* ==================Customers================== */
+.customers-list{
+    display: flex;
+    justify-content: center;
+gap: 24px;
+}
+
+.customers-list-item{
+    width: 158px;
+    height: 88px;
+    border-radius: 4px;
+border: 1px solid var(--lightslate, #8E8F99);
+padding: 16px 32px;
+}
+
+.customers-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customers-list-icon{
+    fill:var(--subtle-text-color) ;
+}
+/* ==================/Customers================== */
 
 /* ==============Footer================ */
 .footer{
