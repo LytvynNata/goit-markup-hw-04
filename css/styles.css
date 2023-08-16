@@ -251,6 +251,12 @@ transition: color var(--transition-dur-and-fun);
 /* ==========/HERO======== */
 
 /* ========Our Benefits======== */
+.benefits-icon{
+    background-color: var(--button-background-color);
+    padding: 24px 100px;
+    margin-bottom: 8px;
+}
+
 .benefits-title{
 font-size: 20px;
 line-height: 1.2;
@@ -345,7 +351,8 @@ margin-bottom: 72px;
     transition: background-color var(--transition-dur-and-fun);
 }
 
-.social-list-link:hover{
+.social-list-link:hover,
+.social-list-link:focus{
 background-color: var(--press-state-color);
 }
 .sub-text{
@@ -370,7 +377,8 @@ padding: 16px 32px;
 
 transition: border-color var(--lightslate);
 }
-.customers-list-item:hover{
+.customers-list-item:hover,
+.customers-list-item:focus{
     border-color: var(--press-state-color);
 }
 .customers-list-link{
@@ -382,7 +390,8 @@ transition: border-color var(--lightslate);
     transition: fill var(--lightslate);
 }
 
-.customers-list-link:hover{
+.customers-list-link:hover,
+.customers-list-link:focus{
     fill: var(--press-state-color);
 }
 
@@ -415,7 +424,8 @@ margin-bottom: 16px;
     transition: color var(--transition-dur-and-fun);
 }
 
-.logo-footer:hover{
+.logo-footer:hover,
+.logo-footer:focus{
 color: var(--press-state-color);
 }
 .footer-slogan{
@@ -426,9 +436,8 @@ max-width: 264px;
 }
 
 .footer-social-text{
-line-height: 24px;
-letter-spacing: 0.02em;
 text-align: left;
+color: var(--white-background-color);
 
     margin-bottom: 16px;
 }
