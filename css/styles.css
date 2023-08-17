@@ -168,6 +168,10 @@ padding-top: 24px;
 padding-bottom: 24px;
 }
 
+.menu-item .current{
+    color: var(--press-state-color);
+}
+
 .menu-link:hover,
 .menu-link:focus{
 color: var(--press-state-color);
@@ -182,6 +186,7 @@ height: 4px;
 border-radius: 2px;
 background-color: var(--press-state-color);
 margin-top: 21px;
+
 }
 
 .contacts{
@@ -196,7 +201,6 @@ margin-top: 21px;
 .link-contacts{
     display: block;
 font-weight: 400;
-/* text-align: left; */
 
 color: #434455;
 padding: 24px 0;
@@ -259,7 +263,7 @@ box-shadow: 0px 4px 4px 0px #00000026;
 border-radius: 4px;
 border: none;
 
-transition: color var(--transition-dur-and-fun);
+transition: background-color var(--transition-dur-and-fun);
 }
 
 .hero-button:hover,
