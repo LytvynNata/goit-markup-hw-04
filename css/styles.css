@@ -162,11 +162,26 @@ color: var(--press-state-color);
 /* text-align: left; */
 color:  var(--hero-background-color);
 transition: color var(--transition-dur-and-fun);
+display: block;
+position: relative;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 
 .menu-link:hover,
 .menu-link:focus{
 color: var(--press-state-color);
+}
+
+.current::after{
+content:'';
+display: block;
+position: absolute;
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background-color: var(--press-state-color);
+margin-top: 21px;
 }
 
 .contacts{
